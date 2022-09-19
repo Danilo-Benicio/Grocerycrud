@@ -3,10 +3,13 @@ package elementos;
 import org.openqa.selenium.By;
 
 public class Elementos {
-
+                    
+	//elementos da Home
 	public By versao = By.xpath("//*[text()='Bootstrap V4 Theme']");
 	public By btnAdd = By.xpath("//a[@class='btn btn-default btn-outline-dark']//i[@class='el el-plus']");
-
+    
+	
+	// elementos de cadastro
 	public By name = By.id("field-customerName");
 	public By lastName = By.id("field-contactLastName");
 	public By contactFirstName = By.id("field-contactFirstName");
@@ -22,6 +25,8 @@ public class Elementos {
 	public By creditLimit = By.id("field-creditLimit");
 	public By delete = By.id("field-deleted");
 
+	
+	//elementos de save e validação
 	public By btnSave = By.id("form-button-save");
 	public By textValidacao = By.xpath("//*[text()='Your data has been successfully stored into the database. ']");
 }
